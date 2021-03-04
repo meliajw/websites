@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div>
+            </div>
+        </div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#why">Why</a></li>
+                        <li><a href="index.html#who">Who</a></li>
+                        <li><a href="index.html#where">Where</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html#prices">Prices</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <!-- <img src="images/cap.png" alt=""> -->
+        <div class="brand-logo-name">JWMTutoring</div>
+            
+            
+    
+        <div class="main-nav">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#why">Why</a></li>
+                <li><a href="index.html#who">Who</a></li>
+                <li><a href="index.html#where">Where</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#prices">Prices</a></li>
+                
+            </ul>
+        </div>
+    </header>
+
+
+    <form name="contact" method="POST" data-netlify="true">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="message">Message:</label> <textarea name="message"></textarea>
+        
+        </div>
+        <div class="elem-group">
+            <div data-netlify-recaptcha="true"></div>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    
+</body>
+</html>

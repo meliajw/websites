@@ -1,0 +1,76 @@
+body {
+    background-image: url("images/background.jpg");
+    font-family: 'Open Sans';
+}
+
+div.elem-group {
+    margin: 1rem 0;
+    padding-left: 3rem;
+    color:white;
+
+  }
+
+  @media only screen and (max-width: 850px){
+    div.elem-group {
+      margin: 1rem 0;
+      padding-left: 1rem;
+      color:white;
+  
+    }
+  }
+
+
+  
+  label {
+    display: block;
+   
+    padding-bottom: 4px;
+    font-size: 1.25em;
+  }
+  
+  input, select, textarea {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: "Open Sans";
+    width: 90vw;
+    padding: 4px;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+  
+  button {
+    background: aliceblue;
+    color: indigo;
+    border: 2px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    padding: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  /* .button {
+
+    margin-top: 7rem;
+    background-color: rgb(3, 3, 180);
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    z-index: 10;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    text-transform: capitalize;
+} */
+  
+  button:hover {
+    border: 2px solid black;
+  }
